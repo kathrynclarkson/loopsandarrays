@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>
+		The index of "apples" in the array is: <span id="answer"></span>
+	</p>
+
+
+	<script>
+		// Complete the code below to write to the html (DOM) out the index of the string "apples" in the array "fruit"
+		debugger;
+		var fruit = ["oranges", "pineapples", "strawberries", "apples", "tangerines", "grapes", "pears"];
+
+		var index = -1;
+		while (index < fruit.length) {
+			if (index < 0) {
+				// there is no -1 index of our fruit array
+				index = 0;
+			}
+			if (fruit[index]==="apples") {
+				document.getElementById('answer').innerHTML = index;
+			}
+			index = index + 1
+		}
+		// Hint:
+		//     while(...) {
+		//         if(...){
+		//             ...
+		//         }
+		//     }
+
+		
+	</script>
+</body>
+</html>
